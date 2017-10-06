@@ -2,18 +2,27 @@
 
 using namespace std;
 
-void square(int n);
+void power(int base, int exponent);
 
 int main()
 {
-	square(5);
+	power(5, 3);
 
 
 	system("pause");
 	return 0;
 }
 
-void square(int n)
+void power(int base, int exponent)
 {
-	cout << n * n << endl;
+	int result = base;
+	for (int i = 1; i < exponent; i++)
+	{
+		result *= base;
+	}
+	if (exponent == 0)
+	{
+		result = 1;
+	}
+	cout << result << endl;
 }
