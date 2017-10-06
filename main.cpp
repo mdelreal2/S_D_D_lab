@@ -7,6 +7,7 @@ void power(int base, int exponent);
 int main()
 {
 	power(5, 3);
+	power(5, 0)
 
 
 	system("pause");
